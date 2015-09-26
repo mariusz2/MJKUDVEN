@@ -39,5 +39,15 @@ namespace MJKUDVEN.Controllers
 
             return View();
         }
+
+        public ActionResult Index2()
+        {
+            ViewData["Kraje"] = new List<string>()
+            {
+                "Polska", "Niemcy", "Hiszpania", "Anglia", "Meksyk", "Portugalia", "Włochy"
+            };
+
+            return View();
+        }
     }
 }

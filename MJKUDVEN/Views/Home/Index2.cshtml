@@ -1,12 +1,11 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Kraje";
 }
 
 <h2>Lista krajów</h2>
 
 <ul>
-    @foreach (string kraj in ViewBag.Kraje)
+    @foreach (string kraj in (List<string>)ViewData["Kraje"])
     {
         <li>@kraj</li>
     }
