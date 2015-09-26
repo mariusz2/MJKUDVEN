@@ -11,7 +11,8 @@ namespace MJKUDVEN.Controllers
         // GET: Home
         public string Index()
         {
-            return typeof(Controller).Assembly.GetName().Version.ToString();
+            var type = typeof(Controller).Assembly.GetName().Version.ToString();
+            return "Hello MVC Aplication - " + type;
         }
     }
 }
