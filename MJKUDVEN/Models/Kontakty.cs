@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace MJKUDVEN.Models
 {
-    public class Kontakty
+    [Table("tblKontakt")]
+    public class Kontakt
     {
-        public string Nazwisko;
         public int KontaktyId { get; set; }
-        public string Nzawisko { get; set; }
+        public string Nazwisko { get; set; }
         public string Imie { get; set; }
         public string Miasto { get; set; }
         public string Ulica { get; set; }

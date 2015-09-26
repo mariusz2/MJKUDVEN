@@ -11,7 +11,7 @@ namespace MJKUDVEN.Controllers
     {
         public ActionResult Szczegoly()
         {
-            Kontakty kontakty = new Kontakty()
+            Kontakt kontakty = new Kontakt()
             {
                 KontaktyId = 1,
                 Imie = "Marcin",

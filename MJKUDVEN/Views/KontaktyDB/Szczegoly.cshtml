@@ -6,45 +6,70 @@
 }
 
 <h2>Szczegoly</h2>
+
 <div>
-    <h4>Kontakty</h4>
+    <h4>Kontakt</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            Nazwisko
+            @Html.DisplayNameFor(model => model.KontaktyId)
         </dt>
+
         <dd>
-            @Model.Nazwisko
+            @Html.DisplayFor(model => model.KontaktyId)
         </dd>
+
         <dt>
-            Imie
+            @Html.DisplayNameFor(model => model.Nazwisko)
         </dt>
+
         <dd>
-            @Model.Imie
+            @Html.DisplayFor(model => model.Nazwisko)
         </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Imie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imie)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Miasto)
         </dt>
+
         <dd>
             @Html.DisplayFor(model => model.Miasto)
         </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Ulica)
         </dt>
+
         <dd>
             @Html.DisplayFor(model => model.Ulica)
         </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Email)
         </dt>
+
         <dd>
             @Html.DisplayFor(model => model.Email)
         </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Telefon)
         </dt>
+
         <dd>
             @Html.DisplayFor(model => model.Telefon)
         </dd>
+
     </dl>
 </div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
