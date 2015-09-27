@@ -9,6 +9,14 @@ namespace MJKUDVEN.Controllers
 {
     public class KontaktyDBController : Controller
     {
+        public ActionResult Index()
+        {
+            KontaktyContext kontaktyContext = new KontaktyContext();
+            List<Kontakt> kontakty = kontaktyContext.Kontakty.ToList();
+
+            return View(kontakty);
+        }
+
         public ActionResult Szczegoly(int id)
         {
             KontaktyContext kontaktyContext = new KontaktyContext();

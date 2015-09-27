@@ -124,6 +124,7 @@
     <Content Include="Views\Home\Index2.cshtml" />
     <Content Include="Views\Kontakty\Szczegoly.cshtml" />
     <Content Include="Views\KontaktyDB\Szczegoly.cshtml" />
+    <Content Include="Views\KontaktyDB\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

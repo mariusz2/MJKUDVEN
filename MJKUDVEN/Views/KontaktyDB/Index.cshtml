@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MJKUDVEN.Models.Kontakt>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="font-family:Arial, Helvetica, sans-serif">
+    <h2>Lista kontaktów</h2>
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.Nazwisko, "Szczegoly", new { id = item.KontaktyId })</li>
+        }
+    </ul>
+</div>
