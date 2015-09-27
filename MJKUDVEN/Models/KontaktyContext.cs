@@ -9,5 +9,6 @@ namespace MJKUDVEN.Models
     public class KontaktyContext :DbContext
     {
         public DbSet<Kontakt> Kontakty { get; set; }
+        public DbSet<Grupa> Grupy { get; set; }
     }
 }

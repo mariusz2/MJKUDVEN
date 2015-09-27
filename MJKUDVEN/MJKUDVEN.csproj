@@ -101,13 +101,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GrupaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KontaktyController.cs" />
     <Compile Include="Controllers\KontaktyDBController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Kontakty.cs" />
+    <Compile Include="Models\Grupa.cs" />
+    <Compile Include="Models\Kontakt.cs" />
     <Compile Include="Models\KontaktyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -125,6 +127,7 @@
     <Content Include="Views\Kontakty\Szczegoly.cshtml" />
     <Content Include="Views\KontaktyDB\Szczegoly.cshtml" />
     <Content Include="Views\KontaktyDB\Index.cshtml" />
+    <Content Include="Views\Grupa\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

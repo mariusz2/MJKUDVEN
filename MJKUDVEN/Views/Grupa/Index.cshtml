@@ -1,0 +1,18 @@
+﻿@using MJKUDVEN.Models
+@model IEnumerable<Grupa>
+
+@{
+    ViewBag.Title = "Lista Grup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="font-family:Arial, Helvetica, sans-serif">
+    <h2>Lista Grup</h2>
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.Nazwa, "Index", "KontaktyDB", new { GrupaId = item.Id }, null)</li>
+        }
+    </ul>
+</div>

@@ -18,5 +18,6 @@ namespace MJKUDVEN.Models
         public string Ulica { get; set; }
         public string Email { get; set; }
         public string Telefon { get; set; }
+        public int GrupaID { get; set; }
     }
 }

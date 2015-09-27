@@ -9,10 +9,10 @@ namespace MJKUDVEN.Controllers
 {
     public class KontaktyDBController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int grupaId)
         {
             KontaktyContext kontaktyContext = new KontaktyContext();
-            List<Kontakt> kontakty = kontaktyContext.Kontakty.ToList();
+            List<Kontakt> kontakty = kontaktyContext.Kontakty.Where(k => k.GrupaID == grupaId).ToList();
 
             return View(kontakty);
         }
