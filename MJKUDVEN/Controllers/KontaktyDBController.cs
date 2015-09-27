@@ -13,6 +13,7 @@ namespace MJKUDVEN.Controllers
         {
             KontaktyContext kontaktyContext = new KontaktyContext();
             Kontakt kontakt = kontaktyContext.Kontakty.Single(k => k.KontaktyId == id);
+              //Kontakt test = kontaktyContext.Kontakty.Find(id);
 
             return View(kontakt);
         }
