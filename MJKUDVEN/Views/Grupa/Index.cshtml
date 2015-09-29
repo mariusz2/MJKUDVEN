@@ -10,9 +10,9 @@
     <h2>Lista Grup</h2>
 
     <ul>
-        @foreach (var item in Model)
+        @foreach (Grupa grupa in Model)
         {
-            <li>@Html.ActionLink(item.Nazwa, "Index", "KontaktyDB", new { GrupaId = item.Id }, null)</li>
+            <li>@Html.ActionLink(grupa.Nazwa, "Index", "KontaktyDB", new { GrupaId = grupa.Id }, null)</li>
         }
     </ul>
 </div>
